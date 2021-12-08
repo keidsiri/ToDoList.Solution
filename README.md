@@ -2,8 +2,7 @@
 
 #### Test-Driven Development With C# lesson 
 ---
-#### By
-* Kate Kiatsiri
+#### By Kate Kiatsiri
 
 ## Technologies Used
 
