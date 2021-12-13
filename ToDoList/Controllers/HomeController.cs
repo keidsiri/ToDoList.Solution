@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using ToDoList.Models;
-using System.Collections.Generic;
+using System.Collections.Generic;  //to use the list
 
 namespace ToDoList.Controllers
 {
   public class HomeController : Controller
   {
-    [HttpGet("/")] //root path 
+    [HttpGet("/")] //root path aka index() route 
     public ActionResult Index()
     {
       List<Item> allItems = Item.GetAll();
@@ -23,7 +23,7 @@ namespace ToDoList.Controllers
     public ActionResult Create(string description)
     {
       Item myItem = new Item(description);
-      return RedirectToAction("Index");
+      return RedirectToAction("Index");  
     }
 
   }
